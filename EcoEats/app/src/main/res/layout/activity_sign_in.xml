@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:padding="@dimen/margin"
+    tools:context=".SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="105dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ecoeatslogo"
+                android:scaleType="centerCrop"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+
+
+        <EditText
+            android:id="@+id/signin_tv_email"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/signin_tv_password"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Password"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/roundedButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_buttton"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingHorizontal="60dp"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/signin_tv_createacc"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don’t Have an account?    Create Account \n or"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:id="@+id/main_ln_googleSignInButton"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/blue"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/google_logo"
+                    android:contentDescription="GOOGLE" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Sign in with Google"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/main_ln_microsoftSignInButton"
+                android:layout_width="230dp"
+                android:layout_below="@id/main_ln_googleSignInButton"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/google_logo"
+                    android:contentDescription="GOOGLE" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Sign in with Microsoft"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
